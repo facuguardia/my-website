@@ -120,12 +120,14 @@ export default function Page() {
                   My Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
+                  De Ideas a Realidades
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                  Descubre los proyectos que mejor representan mi trabajo. Cada
+                  uno refleja un desafío superado y mi pasión por crear
+                  soluciones digitales innovadoras, desde plataformas web hasta
+                  apps móviles. <br /> ¡Explóralos y ve cómo transformo ideas en
+                  experiencias!
                 </p>
               </div>
             </div>
@@ -158,25 +160,26 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  {/* Colaboraciones */}
                   Hackathons
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
+                  Juntos Hacemos Más
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
+                  La magia sucede cuando se suman ideas y talentos. A lo largo
+                  de mi carrera, he tenido el honor de colaborar con mentes
+                  brillantes y empresas visionarias. En esta sección, te invito
+                  a descubrir las sinergias y proyectos que nacieron de un
+                  trabajo en equipo, donde cada colaboración dejó una huella
+                  única.
                 </p>
               </div>
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
+              {DATA.collaboration.map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
@@ -203,18 +206,20 @@ export default function Page() {
                 Contact
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
+                ¿Hablamos?
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+                Si tienes una pregunta o te interesa saber más sobre mis
+                proyectos,{" "}
                 <Link
-                  href={DATA.contact.social.X.url}
+                  href={DATA.contact.social.LinkedIn.url}
+                  target="_blank"
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
+                  envíame un mensaje directo en LinkedIn.
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                Estoy aquí para responder y conversar sobre cómo
+                podemos colaborar.
               </p>
             </div>
           </BlurFade>

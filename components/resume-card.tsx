@@ -41,10 +41,11 @@ export const ResumeCard = ({
   return (
     <Link
       href={href || "#"}
+      target="_blank"
       className="block cursor-pointer"
       onClick={handleClick}
     >
-      <Card className="flex">
+      <Card className="flex items-center px-5 py-4">
         <div className="flex-none">
           <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
             <AvatarImage
@@ -98,7 +99,7 @@ export const ResumeCard = ({
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt-2 text-xs sm:text-sm pl-5"
             >
               {description}
             </motion.div>
