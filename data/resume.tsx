@@ -109,7 +109,7 @@ export const DATA = {
       start: "May 2023",
       end: "Jun 2024",
       description:
-        "Realicé tareas de maquetación, implementación de lógica y corrección de errores en diversas aplicaciones en producción. Contribuí al desarrollo y mejora continua de aplicaciones, optimizando la experiencia de usuario y asegurando el correcto funcionamiento de las funcionalidades.",
+        "Realicé tareas de maquetación, implementación de lógica y corrección de errores en diversas aplicaciones en producción. Contribuí al desarrollo y mejora continua de aplicaciones, optimizando la experiencia de usuario y asegurando el correcto funcionamiento.",
     },
     {
       company: "Facutech",
@@ -144,7 +144,7 @@ export const DATA = {
     {
       school: "Udemy",
       href: "https://www.udemy.com/",
-      degree: "Layout designer - UX/UI Designer",
+      degree: "Layout designer - UX/UI Designer - Frontend Developer",
       logoUrl: "/udemy_logo.jpg",
       start: "2020",
       end: "2024",
@@ -180,7 +180,7 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Company Manager Panel - SaaS",
+      title: "Company Manager Panel",
       href: "https://admin-companies.netlify.app/",
       dates: "Ago 2024 - Oct 2024",
       active: true,
@@ -193,6 +193,7 @@ export const DATA = {
         "Shadcn UI",
         "PostgreSQL",
         "Prisma",
+        "Vercel",
       ],
       links: [
         {
@@ -201,7 +202,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/admin_companies.png",
+      image: "/admin-companies.png",
       video: "",
     },
     {
@@ -211,7 +212,14 @@ export const DATA = {
       active: true,
       description:
         "Un negocio especializado en el cuidado y embellecimiento de uñas busca fortalecer su presencia digital y atraer nuevos clientes. En esta primera fase, he diseñado una landing page moderna y atractiva que destaca los servicios ofrecidos, incluyendo manicura, pedicura y tratamientos especializados. La página muestra los precios de cada servicio de manera clara y accesible. Además, he implementado una funcionalidad que permite a los usuarios reservar citas en línea de forma rápida y sencilla, mejorando la experiencia del cliente y optimizando la gestión de reservas del negocio.",
-      technologies: ["Next.js", "Typescript", "TailwindCSS", "Vercel"],
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "PostgreSQL",
+        "Prisma",
+        "Vercel",
+      ],
       links: [
         {
           type: "Website",

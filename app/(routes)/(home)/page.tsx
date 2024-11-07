@@ -125,9 +125,8 @@ export default function Page() {
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Descubre los proyectos que mejor representan mi trabajo. Cada
                   uno refleja un desafío superado y mi pasión por crear
-                  soluciones digitales innovadoras, desde plataformas web hasta
-                  apps móviles. <br /> ¡Explóralos y ve cómo transformo ideas en
-                  experiencias!
+                  soluciones digitales innovadoras. <br /> ¡Explóralos y ve cómo
+                  transformo ideas en experiencias!
                 </p>
               </div>
             </div>
@@ -217,8 +216,8 @@ export default function Page() {
                 >
                   envíame un mensaje directo en LinkedIn.
                 </Link>{" "}
-                Estoy aquí para responder y conversar sobre cómo
-                podemos colaborar.
+                Estoy aquí para responder y conversar sobre cómo podemos
+                colaborar.
               </p>
             </div>
           </BlurFade>
