@@ -36,10 +36,6 @@ export default async function BlogPostPage({
               <time className="text-sm text-muted-foreground">
                 {post.date}
               </time>
-              <span className="text-sm text-muted-foreground">•</span>
-              <span className="text-sm text-muted-foreground">
-                {post.readingTime}
-              </span>
             </div>
             <h1 className="text-4xl font-bold">{post.title}</h1>
             <p className="text-xl text-muted-foreground">{post.description}</p>

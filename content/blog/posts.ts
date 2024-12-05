@@ -102,6 +102,68 @@ export const posts: BlogPost[] = [
         ]
       }
     ]
+  },
+
+  {
+    slug: "react-ia-machine-learning",
+    title: "De React a la IA: Integrando Modelos de Machine Learning en Aplicaciones Web",
+    description: "Descubre cómo la combinación de React y Machine Learning puede llevar tus aplicaciones web al siguiente nivel, desde recomendaciones personalizadas hasta sistemas predictivos.",
+    date: "Jueves, 05 de Diciembre de 2024",
+    tags: ["React", "Machine Learning", "IA", "Web"],
+    author: {
+      name: "Facu Guardia",
+      avatar: "/me.png"
+    },
+    coverImage: "/post-three-img1.jpg",
+    readingTime: "9 min",
+    sections: [
+      {
+        title: "Introducción",
+        content: [
+          "La Inteligencia Artificial (IA) está revolucionando el desarrollo web, y React, como una de las bibliotecas más populares, se adapta perfectamente a esta transformación.",
+          "Integrar modelos de machine learning en aplicaciones web no solo es posible, sino que también permite crear experiencias más inteligentes y personalizadas. En este post, exploraremos cómo aprovechar esta poderosa combinación."
+        ]
+      },
+      {
+        title: "El Rol de Machine Learning en Aplicaciones Web",
+        content: [
+          "Machine Learning (ML) permite a las aplicaciones analizar datos y hacer predicciones o decisiones sin necesidad de programación explícita para cada escenario.",
+          "En el contexto web, ML puede ser utilizado para: recomendaciones personalizadas, detectar patrones en el comportamiento del usuario, o implementar funcionalidades avanzadas como chatbots."
+        ]
+      },
+      {
+        title: "Herramientas para Empezar",
+        content: [
+          "TensorFlow.js: Una biblioteca JavaScript que permite entrenar e implementar modelos directamente en el navegador o en Node.js.",
+          "Brain.js: Ideal para redes neuronales simples y rápidas en JavaScript.",
+          "ml5.js: Una biblioteca amigable que abstrae TensorFlow.js para facilitar el uso de ML."
+        ],
+        image: "/post-three-img2.jpg",
+        imageAlt: "Ejemplo práctico de integración de Machine Learning en React"
+      },
+      {
+        title: "Tendencias Actuales y Estadísticas",
+        content: [
+          "Según Statista, el 78% de las empresas que usan IA la emplean para personalizar la experiencia del cliente.",
+          "La adopción de TensorFlow.js ha crecido un 45% en el último año, destacándose en proyectos web modernos."
+        ]
+      },
+      {
+        title: "Beneficios y Desafíos",
+        content: [
+          "Beneficios: Interactividad, escalabilidad y experiencias más dinámicas.",
+          "Desafíos: Tamaño de los modelos puede afectar la velocidad de carga y la privacidad de los datos es crucial."
+        ]
+      },
+      {
+        title: "Conclusión",
+        content: [
+          "Integrar machine learning en aplicaciones web usando React no solo mejora la experiencia del usuario, sino que también permite a los desarrolladores crear soluciones innovadoras.",
+          "Con herramientas como TensorFlow.js, esta combinación es más accesible que nunca. La pregunta no es si deberías adoptar IA en tus proyectos, sino cuándo comenzarás."
+        ]
+      }
+    ]
   }
+  
   
 ];

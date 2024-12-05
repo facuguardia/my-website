@@ -3,9 +3,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { formatDate } from "@/lib/utils";
 import { BlogPost } from "@/types/blog";
-import { Clock } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -36,7 +34,7 @@ export function BlogCard({ post }: BlogCardProps) {
             <div className="flex flex-col">
               <span className="text-sm font-medium">{post.author.name}</span>
               <time className="text-xs text-muted-foreground">
-                {formatDate(post.date)}
+                {post.date}
               </time>
             </div>
           </div>
@@ -56,12 +54,6 @@ export function BlogCard({ post }: BlogCardProps) {
                 </Badge>
               ))}
             </div>
-            {post.readingTime && (
-              <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                <Clock className="h-3 w-3" />
-                <span>{post.readingTime}</span>
-              </div>
-            )}
           </div>
         </CardContent>
       </Card>
