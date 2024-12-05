@@ -6,7 +6,6 @@ import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-// Definición correcta de los tipos para Next.js 15
 interface Props {
   params: Promise<{
     slug: string;
@@ -35,7 +34,7 @@ export default async function BlogPostPage({
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <time className="text-sm text-muted-foreground">
-                {formatDate(post.date)}
+                {post.date}
               </time>
               <span className="text-sm text-muted-foreground">•</span>
               <span className="text-sm text-muted-foreground">
