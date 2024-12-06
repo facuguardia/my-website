@@ -16,11 +16,12 @@ export default function BlogPage() {
               Blog
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Pensamientos y Experiencias
+              El Arte del Código y Más Allá
             </h2>
             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Explorando el mundo del desarrollo web a través de artículos
-              técnicos, tutoriales y reflexiones personales.
+              Aquí encontrarás una colección de artículos que abarcan desde
+              conceptos técnicos hasta reflexiones personales sobre el mundo
+              del desarrollo de software.
             </p>
           </div>
         </div>
@@ -38,22 +39,3 @@ export default function BlogPage() {
     </main>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
