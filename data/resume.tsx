@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Desarrollador Full Stack especializado en arquitectura y desarrollo de soluciones SaaS",
   summary:
-    "En 2020, cuando la pandemia sacudió al mundo y nos sumió en el confinamiento, decidí darle un giro inesperado a mi vida. Siempre había sentido curiosidad por la tecnología, pero no tenía experiencia en desarrollo de software. Empecé desde cero, con WordPress como mi punto de entrada. Hoy, cuatro años después, miro atrás y puedo decir que no fue sencillo, pero sí profundamente satisfactorio. Actualmente desarrollo aplicaciones fullstack usando TypeScript y su ecosistema: React.js, Next.js, React Native en mobile, y Node.js para el backend. Aunque disfruto de todos los aspectos del desarrollo, mi corazón pertenece al frontend, donde puedo combinar creatividad y lógica para construir experiencias visuales impactantes. Soy una persona que abraza lo complejo y considera 'imposible' una palabra inexistente. Con este espíritu, y con una mentalidad positiva, he alcanzado cada meta en mi vida.",
+    "Desarrollador y creador de soluciones tecnológicas. Con experiencia en desarrollo web, SaaS y aplicaciones innovadoras, me apasiona transformar ideas en productos funcionales y escalables. Trabajo con tecnologías modernas como TypeScript, Next.js, TailwindCSS, Shadcn UI, Firebase, entre otras. Siempre enfocado en resolver problemas reales con herramientas prácticas.Además de mi experiencia técnica, valoro la conexión humana detrás de cada proyecto, asegurándome de comprender las necesidades específicas de mis clientes para entregar soluciones que realmente aporten valor.",
   avatarUrl: "/me.png",
   skills: [
     "JavaScript",
