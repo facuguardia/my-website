@@ -1,3 +1,5 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -6,10 +8,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
+import { cn, getYouTubeId } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import Markdown from "react-markdown";
+import { VideoModal } from "@/components/video-modal";
 
 interface Props {
   title: string;
@@ -40,64 +44,66 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const youtubeId = video ? getYouTubeId(video) : null;
+
   return (
-    <Card
-      className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
-      }
-    >
-      <Link
-        href={href || "#"}
-        className={cn("block cursor-pointer", className)}
+    <>
+      <Card
+        className={
+          "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
+        }
       >
-        {video && (
-          <video
-            src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
-          />
-        )}
-        {image && (
-          <Image
-            src={image}
-            alt={title}
-            width={500}
-            height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
-          />
-        )}
-      </Link>
-      <CardHeader className="px-2">
-        <div className="space-y-1">
-          <CardTitle className="mt-1 text-base">{title}</CardTitle>
-          <time className="font-sans text-xs">{dates}</time>
-          <div className="hidden font-sans text-xs underline print:visible">
-            {link?.replace("https://", "").replace("www.", "").replace("/", "")}
-          </div>
-          <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-            {description}
-          </Markdown>
+        <div
+          className="relative h-40 w-full cursor-pointer"
+          onClick={() => youtubeId && setIsModalOpen(true)}
+        >
+          {image && (
+            <Image
+              src={image}
+              alt={title}
+              width={500}
+              height={300}
+              className="absolute inset-0 h-full w-full object-cover object-top"
+            />
+          )}
+          {youtubeId && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity">
+              <PlayIcon className="w-12 h-12 text-white" />
+            </div>
+          )}
         </div>
-      </CardHeader>
-      <CardContent className="mt-auto flex flex-col px-2">
-        {tags && tags.length > 0 && (
-          <div className="mt-2 flex flex-wrap gap-1">
-            {tags?.map((tag) => (
-              <Badge
-                className="px-1 py-0 text-[10px]"
-                variant="secondary"
-                key={tag}
-              >
-                {tag}
-              </Badge>
-            ))}
+        <CardHeader className="px-2">
+          <div className="space-y-1">
+            <CardTitle className="mt-1 text-base">{title}</CardTitle>
+            <time className="font-sans text-xs">{dates}</time>
+            <div className="hidden font-sans text-xs underline print:visible">
+              {link
+                ?.replace("https://", "")
+                .replace("www.", "")
+                .replace("/", "")}
+            </div>
+            <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+              {description}
+            </Markdown>
           </div>
-        )}
-      </CardContent>
-      {/* <CardFooter className="px-2 pb-2">
+        </CardHeader>
+        <CardContent className="mt-auto flex flex-col px-2">
+          {tags && tags.length > 0 && (
+            <div className="mt-2 flex flex-wrap gap-1">
+              {tags?.map((tag) => (
+                <Badge
+                  className="px-1 py-0 text-[10px]"
+                  variant="secondary"
+                  key={tag}
+                >
+                  {tag}
+                </Badge>
+              ))}
+            </div>
+          )}
+        </CardContent>
+        {/* <CardFooter className="px-2 pb-2">
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
@@ -111,6 +117,26 @@ export function ProjectCard({
           </div>
         )}
       </CardFooter> */}
-    </Card>
+        <VideoModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          videoId={youtubeId}
+          title={title}
+        />
+      </Card>
+    </>
+  );
+}
+
+function PlayIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M8 5v14l11-7z" />
+    </svg>
   );
 }

@@ -151,6 +151,32 @@ export const DATA = {
     },
   ],
   projects: [
+    // {
+    //   title: "CatalogoSimple",
+    //   href: "https://catalogosimple.es/",
+    //   dates: "Nov 2024 - Presente",
+    //   active: true,
+    //   description:
+    //     "Creé el sitio web para Patito Media, una agencia digital especializada en marketing, diseño web, y producción audiovisual. El diseño está pensado para reflejar su carácter creativo y profesional, integrando una paleta moderna y una estructura interactiva. El hero, con un mensaje dinámico, captura la esencia multifacética de la agencia, mientras que secciones específicas destacan sus valores clave de confianza, eficiencia y creatividad. Además, implementé modos de visualización claro y oscuro, y añadí componentes personalizados, como un carrusel de clientes y una presentación del equipo, para mejorar la experiencia de usuario y accesibilidad.",
+    //   technologies: [
+    //     "Next.js",
+    //     "Typescript",
+    //     "TailwindCSS",
+    //     "Shadcn UI",
+    //     "Firebase",
+    //     "Zustand",
+    //     "Vercel",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://youtu.be/1IQB4-KNvJY",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/catalogosimple.png",
+    //   video: "https://youtu.be/1IQB4-KNvJY",
+    // },
     {
       title: "Patito Media - Agencia Digital",
       href: "https://www.patitomedia.com/",
@@ -172,12 +198,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://www.patitomedia.com/",
+          href: "https://youtu.be/I9_HhNDti0E",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/patito_media.jpg",
-      video: "",
+      video: "https://youtu.be/I9_HhNDti0E",
     },
     {
       title: "Company Manager Panel",
@@ -198,37 +224,36 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://admin-companies.netlify.app/",
+          href: "https://youtu.be/Or2d1jtdzBM",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/admin-companies.png",
-      video: "",
+      video: "https://youtu.be/Or2d1jtdzBM",
     },
     {
-      title: "Nails Queen",
-      href: "https://www.nailsqueen.com",
+      title: "Card 3D - Todo el poder de TailwindCSS",
+      href: "https://card-3d.vercel.app/",
       dates: "Dic 2022 - Feb 2023",
       active: true,
       description:
-        "Un negocio especializado en el cuidado y embellecimiento de uñas busca fortalecer su presencia digital y atraer nuevos clientes. En esta primera fase, he diseñado una landing page moderna y atractiva que destaca los servicios ofrecidos, incluyendo manicura, pedicura y tratamientos especializados. La página muestra los precios de cada servicio de manera clara y accesible. Además, he implementado una funcionalidad que permite a los usuarios reservar citas en línea de forma rápida y sencilla, mejorando la experiencia del cliente y optimizando la gestión de reservas del negocio.",
+        "Este proyecto es una muestra del enfoque innovador que aplico en mis desarrollos, utilizando TailwindCSS y Motion CSS para crear tarjetas 3D con animaciones fluidas y efectos visuales impactantes. Más allá de demostrar las capacidades de estas herramientas, refleja mi compromiso con la creación de interfaces modernas, dinámicas y funcionales. Cada uno de mis proyectos está diseñado para resolver problemas reales mientras exploro nuevas tecnologías y técnicas.",
       technologies: [
         "Next.js",
         "Typescript",
         "TailwindCSS",
-        "PostgreSQL",
-        "Prisma",
+        "Motion CSS",
         "Vercel",
       ],
       links: [
         {
           type: "Website",
-          href: "https://www.nailsqueen.com",
+          href: "https://youtu.be/CW2D7vjlob8",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/nails_queen.jpeg",
-      video: "",
+      image: "/card_3d.png",
+      video: "https://youtu.be/CW2D7vjlob8",
     },
     {
       title: "H2O Deportiva",
@@ -249,12 +274,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://www.h2odeportiva.com",
+          href: "https://youtu.be/CkN-1GV8wj0",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/h2o_deportiva.jpg",
-      video: "",
+      video: "https://youtu.be/CkN-1GV8wj0",
     },
   ],
   collaboration: [
