@@ -193,7 +193,7 @@ export const posts: BlogPost[] = [
   {
     slug: "ia-amiga-o-enemiga",
     title:
-      "IA: ¿Amiga o enemiga de los desarrolladores? Navegando el futuro del trabajo",
+      "IA: ¿Amiga o enemiga de los desarrolladores?",
     description:
       "Explora cómo la inteligencia artificial está cambiando la manera de trabajar de los desarrolladores, sus beneficios, desafíos y cómo prepararse para el futuro.",
     date: "Miercoles, 4 de Diciembre de 2024",
@@ -306,7 +306,7 @@ export const posts: BlogPost[] = [
   // Post 6
   {
     slug: "multiagentes-ia-revolucion-futuro",
-    title: "Multiagentes de IA: ¿Un ejército digital para cambiar el mundo del trabajo?",
+    title: "¿Un ejército digital para cambiar el mundo del trabajo?",
     description: "Descubre cómo los sistemas multiagentes de IA están colaborando como equipos digitales para automatizar negocios, resolver problemas complejos y, quién sabe, ¡crear la próxima startup unicornio!",
     date: "Martes, 17 de Diciembre de 2024",
     tags: ["IA", "Tecnología", "Multiagentes", "Futuro del Trabajo"],
