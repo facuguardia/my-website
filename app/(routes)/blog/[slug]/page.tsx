@@ -1,11 +1,19 @@
 import { Metadata } from "next";
-import BlurFade from "@/components/magicui/blur-fade";
-import { getAllPosts } from "@/lib/blog";
-import { formatDate } from "@/lib/utils";
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import ReactMarkdown from 'react-markdown';
+import { getAllPosts } from "@/lib/blog";
+import BlurFade from "@/components/magicui/blur-fade";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
+
+// Metadata
+export const metadata: Metadata = {
+  title: "Post",
+  description: "Post de Facu Guardia",
+}
+
+const BLUR_FADE_DELAY = 0.04;
 interface Props {
   params: Promise<{
     slug: string;
@@ -50,13 +58,15 @@ export default async function BlogPostPage({
           </div>
           {post.coverImage && (
             <div className="relative aspect-video overflow-hidden rounded-lg">
-              <Image
-                src={post.coverImage}
-                alt={post.title}
-                width={1000}
-                height={1000}
-                className="object-cover"
-              />
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <Image
+                  src={post.coverImage}
+                  alt={post.title}
+                  width={1000}
+                  height={1000}
+                  className="object-cover"
+                />
+              </BlurFade>
             </div>
           )}
         </div>
@@ -71,7 +81,7 @@ export default async function BlogPostPage({
               )}
               {section.content.map((paragraph, pIndex) => (
                 <p key={pIndex} className="text-muted-foreground mb-4">
-                  {paragraph}
+                  <ReactMarkdown>{paragraph}</ReactMarkdown>
                 </p>
               ))}
               {section.image && (

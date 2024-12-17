@@ -301,5 +301,67 @@ export const posts: BlogPost[] = [
         ]
       }
     ]
+  },
+
+  // Post 6
+  {
+    slug: "multiagentes-ia-revolucion-futuro",
+    title: "Multiagentes de IA: ¿Un ejército digital para cambiar el mundo del trabajo?",
+    description: "Descubre cómo los sistemas multiagentes de IA están colaborando como equipos digitales para automatizar negocios, resolver problemas complejos y, quién sabe, ¡crear la próxima startup unicornio!",
+    date: "Martes, 17 de Diciembre de 2024",
+    tags: ["IA", "Tecnología", "Multiagentes", "Futuro del Trabajo"],
+    author: {
+      name: "Facu Guardia",
+      avatar: "/me.png"
+    },
+    coverImage: "/post-six-img1.png",
+    readingTime: "6 min",
+    sections: [
+      {
+        title: "¿Qué pasaría si tu equipo fueran 100% inteligencias artificiales?",
+        content: [
+          "Imagina esto: quieres montar un negocio, pero no tienes equipo ni tiempo. ¿La solución? Un grupo de **agentes inteligentes** (multiagentes de IA) que trabajan juntos, cada uno con un rol definido, como un equipo de trabajo real.",
+          "Un agente analiza el mercado, otro programa el producto, uno más crea contenido y otro atiende a tus clientes. Suena a ciencia ficción, ¿verdad? Pues no lo es. Los sistemas multiagentes de IA ya están aquí y están revolucionando la forma en que resolvemos problemas y construimos negocios."
+        ]
+      },
+      {
+        title: "¿Qué son los multiagentes de IA y cómo funcionan?",
+        content: [
+          "Un **sistema multiagente de IA** es un conjunto de inteligencias artificiales independientes que colaboran para lograr un objetivo común. Cada agente tiene una tarea específica y se comunica con los demás para coordinar sus acciones.",
+          "Por ejemplo, si estás desarrollando una aplicación, un agente podría encargarse del diseño, otro de escribir el código, mientras un tercero analiza métricas y optimiza el rendimiento. Es como tener un equipo de trabajo, solo que compuesto por inteligencias artificiales que no necesitan café... ni descanso."
+        ],
+        image: "/post-six-img2.png",
+        imageAlt: "Colaboración entre agentes de IA en un sistema digital"
+      },
+      {
+        title: "Ejemplo real: Montar una startup solo con multiagentes",
+        content: [
+          "¿Te imaginas montar una startup sin contratar a una sola persona? Aquí te dejo una idea futurista, pero cada vez más cercana:",
+          "1. **El CEO virtual**: Define la visión de la startup, analiza tendencias del mercado y planifica los próximos pasos.",
+          "2. **El desarrollador IA**: Genera el código, diseña la arquitectura y lanza el producto.",
+          "3. **El marketer IA**: Crea contenido para redes sociales, planifica campañas publicitarias y optimiza conversiones.",
+          "4. **El agente de soporte**: Gestiona dudas y problemas de los usuarios en tiempo real.",
+          "Herramientas como **AutoGPT** y **LangChain** ya están permitiendo a estos 'ejércitos digitales' trabajar juntos en proyectos complejos. La frontera entre ciencia ficción y realidad nunca fue tan fina."
+        ]
+      },
+      {
+        title: "¿Y el futuro? Más allá de la imaginación",
+        content: [
+          "Lo que hoy parece sorprendente, mañana será la norma. Los sistemas multiagentes de IA avanzan rápidamente gracias a mejoras en el procesamiento de lenguaje natural y el aprendizaje profundo.",
+          "En un futuro cercano, estos agentes podrán liderar proyectos completos, gestionar empresas y trabajar mano a mano con equipos humanos en roles híbridos. Suena loco, pero también emocionante.",
+          "La clave estará en aprovechar su capacidad de automatizar lo repetitivo, mientras los humanos nos enfocamos en lo que mejor sabemos hacer: **crear, pensar y conectar**."
+        ],
+        image: "/post-six-img3.png",
+        imageAlt: "Ilustración del futuro del trabajo con multiagentes IA"
+      },
+      {
+        title: "El futuro es colaborativo",
+        content: [
+          "Los multiagentes de IA no vienen a reemplazarnos, vienen a **colaborar** con nosotros. Nos ayudan a ser más rápidos, más precisos y, sobre todo, más eficientes.",
+          "Ya sea que quieras automatizar tareas complejas, construir una startup desde cero o simplemente optimizar procesos, los multiagentes son el futuro del trabajo y la tecnología.",
+          "¿Qué opinas? ¿Te imaginas trabajar junto a un equipo digital?"
+        ]
+      }
+    ]
   }
 ];

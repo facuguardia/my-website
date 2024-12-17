@@ -1,8 +1,15 @@
+import { Metadata } from "next";
 import BlurFade from "@/components/magicui/blur-fade";
 import { BlogCard } from "@/components/blog-card";
 import { getAllPosts } from "@/lib/blog";
 
 const BLUR_FADE_DELAY = 0.04;
+
+// Metadata
+export const metadata: Metadata = {
+  title: "Blog",
+  description: "Blog de Facu Guardia",
+}
 
 export default function BlogPage() {
   const posts = getAllPosts();

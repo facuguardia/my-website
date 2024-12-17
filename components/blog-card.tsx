@@ -7,6 +7,7 @@ import { BlogPost } from "@/types/blog";
 import Image from "next/image";
 import Link from "next/link";
 
+
 interface BlogCardProps {
   post: BlogPost;
 }
@@ -41,7 +42,7 @@ export function BlogCard({ post }: BlogCardProps) {
           <div>
             <h3 className="text-xl font-semibold tracking-tight">{post.title}</h3>
             <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">
-              {post.description}
+            {post.description}
             </p>
           </div>
         </CardHeader>
